@@ -109,4 +109,4 @@ RUN chmod +x /root/run.sh
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
-CMD ["/root/run.sh"]
+CMD ["/root/run.sh","--allow-root","--NotebookApp.token=''","--NotebookApp.password=''"]
