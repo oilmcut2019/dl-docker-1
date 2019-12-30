@@ -96,7 +96,8 @@ WORKDIR /home
 
 RUN git clone https://github.com/oilmcut2019/Hands-On-Image-Processing-with-Python.git --branch=pc-001
 RUN git clone https://github.com/pydot/pydot-ng.git
-RUN python pydot-ng/setup.py install
+RUN cd pydot-ng \
+	python setup.py install
 RUN pip3.5 install ipython
 COPY jupyter_notebook_config.py /root/.jupyter/
 
